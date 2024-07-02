@@ -1,0 +1,20 @@
+{
+	"name": "evo-mark/evo-laravel-brevo",
+	"description": "Brevo Mail support for Laravel applications",
+	"type": "library",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"EvoMark\\EvoLaravelBrevo\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"EvoMark\\EvoLaravelBrevo\\ServiceProvider"
+			]
+		}
+	},
+	"minimum-stability": "stable",
+	"require": {}
+}
