@@ -18,5 +18,11 @@ class ServiceProvider extends SupportServiceProvider
         Mail::extend('brevo', function (array $config) {
             return new BrevoTransport();
         });
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/brevo.php' => config_path('brevo.php'),
+            ], 'brevo');
+        }
     }
 }

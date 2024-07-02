@@ -3,6 +3,15 @@
 	"description": "Brevo Mail support for Laravel applications",
 	"type": "library",
 	"license": "MIT",
+	"homepage": "https://github.com/evo-mark/evo-laravel-brevo",
+	"authors": [
+		{
+			"name": "Craig Riley",
+			"email": "c.riley@evomark.co.uk",
+			"homepage": "https://evomark.co.uk",
+			"role": "Developer"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"EvoMark\\EvoLaravelBrevo\\": "src/"
@@ -15,6 +24,13 @@
 			]
 		}
 	},
-	"minimum-stability": "stable",
-	"require": {}
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php": ">=8.2",
+		"getbrevo/brevo-php": "^2.0",
+		"symfony/mailer": "^7.0",
+		"symfony/mime": "^7.0",
+		"illuminate/support": "^10.10.0|^11.0"
+	}
 }
