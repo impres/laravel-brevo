@@ -1,5 +1,5 @@
 {
-	"name": "evo-mark/evo-laravel-brevo",
+	"name": "impres/laravel-brevo",
 	"description": "Brevo Mail support for Laravel applications",
 	"type": "library",
 	"license": "MIT",
